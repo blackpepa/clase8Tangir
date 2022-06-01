@@ -5,7 +5,7 @@ let h2 = document.getElementById("tituloDos")
 h2.textContent = "Calculadora de propina";
 
 let textTitle = document.querySelector('h2');
-textTitle.style.padding = '10px';
+textTitle.style.padding = '2px';
 
 let back = document.getElementById('headerImg');
 back.setAttribute('src','./img/background.jpg');
@@ -15,12 +15,13 @@ back.setAttribute('alt','Background de la página');
 let arregloTip = [tipA, tipB, tipC, tipD, tipE]
 
 function propinasSugeridas(){
+    let box = document.getElementById("box")
     let ul = document.createElement("ul")
-    document.body.appendChild(ul)
+    box.appendChild(ul)
     arregloTip.forEach(sugerencias => {
         let li = document.createElement("li");
         li.textContent = sugerencias.mostrar_listado();
-        ul.appendChild(li);
+        ul.appendChild(li)
         })
         return li
 }
@@ -49,5 +50,45 @@ function tip(){
 
     document.getElementById("resultado").style.display='block';
 }
-    
- 
+/*
+let tipSug= document.querySelector("#formdos");
+tipFull.addEventListener("change", datosSugerirPropina)
+function datosSugerirPropina() {
+
+    let lugar = document.getElementById("lugar").value;
+    let tipo = document.getElementById("tipo").value;
+    let servicio = Number(document.getElementById("servicio").value);
+    let porcentaje = Number(document.getElementById("porcentaje").value);
+    if(servicio >0 && servicio< 6){
+        return new sugerencias(lugar, tipo, servicio, porcentaje);
+    }
+
+
+  }
+function ingresarNuevaSugerencia() {
+    sugerencias = datosSugerirPropina();
+    let ok = document.getElementById("ok");
+    let okP= document.createElement("h2");
+    if (sugerencias) {
+        arregloTip.push(sugerencias);
+        ok.appendChild(okP)
+        okP.textContent = "Sugerencia agregada"
+
+    }
+    else {
+        okP.textContent ="Volvé a ingresar los datos"
+    }
+
+}
+
+let boton3 = document.getElementById("agregarS")
+boton3.addEventListener("submit", ingresarNuevaSugerencia);
+boton3.addEventListener("click",ingresarNuevaSugerencia);
+  
+let enter3 = document.getElementById("agregarS")
+boton3.addEventListener("keypress", (ingresarNuevaSugerencia)=>{
+  if(ingresarNuevaSugerencia.keyPress === 13){
+    ingresarNuevaSugerencia()
+      }
+  });
+*/

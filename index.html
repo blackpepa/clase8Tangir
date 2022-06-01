@@ -23,7 +23,7 @@
                     <input type="number" class="form-control" aria-label="monto" name="monto" id="monto">
                 </div>
                     <div class="col m-2">
-                        <label for="tip">¿Qué porcentaje de propina querés dejar?</label>
+                        <label for="tip">Porcentaje de propina</label>
                         <input type="number" class="form-control" aria-label="tip" name="tip" id="tip">
                     </div>
                     </div>
@@ -37,10 +37,43 @@
         </section>
         <section class="card py-3" id="listadoSection" >
             <h2 class="card-header">Consultar listado de propinas sugeridas</h2>
-            <div class="py-3 m-2 d-grid col-6 mx-auto">
+            <div id="box">
+            </div>
+            <div class="py-3 m-2 d-grid col-6 mx-auto" >
                 <button type="submit" class="btn btn-primary d-flex justify-content-around" id="consultarS">Consultar listado</button>
             </div>
         </section>
+        <!-- <section id="sugerenciaSection" class=" card py-3">
+            <h2 class="card-header">Agregar una sugerencia</h2>
+            <form id="formDos">
+                <div class="row">
+                    <div class="col m-2">
+                        <label for="lugar">Ingresá el nombre del lugar que quiere reseñar</label>
+                        <input type="text" class="form-control" aria-label="lugar" name="lugar" id="lugar">
+                    </div>
+                    <div class="col m-2">
+                        <label for="tipo">Ingresá el tipo de comercio o servicio. Ejemplos: Restaurante, delivery, etc.</label>
+                        <input type="text" class="form-control" aria-label="tipo" name="tipo" id="tipo">
+                    </div>
+                <div class="col m-2">
+                    <label for="servicio">Ingresá un número del 1 al 5 para calificar el srevicio, siendo 1 malo y 5 genial.</label>
+                    <input type="number" class="form-control" aria-label="servicio" name="servicio" id="servicio">
+                </div>
+                    <div class="col m-2">
+                        <label for="porcentaje">Ingresá un porcentaje sugerido de propina</label>
+                        <input type="number" class="form-control" aria-label="porcentaje" name="porcentaje" id="porcentaje">
+                    </div>
+                    </div>
+                    <div class="row m-2">
+                        <div class="py-3 m-2 d-grid col-6 mx-auto">
+                            <button type="submit" class="btn btn-primary d-flex justify-content-around" id="agregarS">Agregar sugerencia</button>
+                        </div>
+                        <div id="ok">
+
+                        </div>
+                </div>
+            </form>
+        </section> -->
     </main>
     <script src="js/objetotip.js"></script>
     <script src="js/script3.js"></script>
